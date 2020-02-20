@@ -47,7 +47,7 @@ services:
 
   mercure:
     # in production, we may want to use the managed version of Mercure
-    # https://github.com/dunglas/mercure#managed-version
+    # https://mercure.rocks/pricing
     image: dunglas/mercure
     restart: always
     environment:
