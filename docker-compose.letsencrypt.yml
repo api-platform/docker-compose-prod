@@ -9,7 +9,7 @@ services:
       - LETSENCRYPT_STAGING=${LETSENCRYPT_STAGING:-false}
       - LETSENCRYPT_USER_MAIL=${LETSENCRYPT_USER_MAIL:?LETSENCRYPT_USER_MAIL is not set or empty}
       # if you don't use Cloudflare as your DNS provider, change these as necessary
-      # https://github.com/adferrand/docker-letsencrypt-dns#configuring-dns-provider-and-authentication-to-dns-api
+      # https://github.com/adferrand/dnsrobocert/blob/legacy/README.md#configuring-dns-provider-and-authentication-to-dns-api
       - LEXICON_CLOUDFLARE_AUTH_TOKEN=${LEXICON_CLOUDFLARE_AUTH_TOKEN:?LEXICON_CLOUDFLARE_AUTH_TOKEN is not set or empty}
       - LEXICON_CLOUDFLARE_AUTH_USERNAME=${LEXICON_CLOUDFLARE_AUTH_USERNAME:?LEXICON_CLOUDFLARE_AUTH_USERNAME is not set or empty}
       - LEXICON_PROVIDER=cloudflare
